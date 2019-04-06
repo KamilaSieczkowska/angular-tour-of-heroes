@@ -1,0 +1,50 @@
+.hero__box {
+    background: #607d8b;
+    padding: 30px 20px;
+    color: #FFF;
+    width: 100%;
+}
+
+.details__title {
+    font-size: 2rem;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.details__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .image {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        background: #FFF;
+        border: 1px solid black;
+
+        img {
+           max-width: 100%;
+        }
+    }
+
+    .info {
+        padding: 0 20px;
+        width: 50%;
+
+        p {
+            margin: 0;
+            padding: 15px 0;
+            font-size: 1.3rem;
+
+            span {
+                font-weight: bold;
+            }
+
+            input {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    }
+}

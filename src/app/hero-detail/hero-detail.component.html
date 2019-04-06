@@ -1,0 +1,16 @@
+<div *ngIf="hero" class="hero__box">
+  <div class="details__box">
+    <div class="image">
+      <img src=" {{ hero.image }} " alt=" {{ hero.name }} ">
+    </div>
+    <div class="info">
+      <h2 class="details__title">{{ hero.name }}</h2>
+      <p><span>id: </span> {{ hero.id }} </p>
+      <p>
+        <label><span>opis: </span><br>
+          <input [(ngModel)]="hero.desc" placeholder="opis bohatera" />
+        </label>
+      </p>
+    </div>
+  </div>
+</div>
