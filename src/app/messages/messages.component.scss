@@ -1,8 +1,10 @@
+@import '../../styles.scss';
+
 .messages {
     width: 60%;
     padding: 20px;
-    background: #3a005c;
-    color: #FFF;
+    background: $color7;
+    color: $color5;
     margin: 20px auto;
 
     h2 {
@@ -21,14 +23,14 @@
         display: block;
         border: none;
         outline: none;
-        background: #ffd900;
-        color: #1a1a1a;
+        background: $color2;
+        color: $color5;
         padding: 10px;
         margin: 0 auto;
         cursor: pointer;
 
         &:hover {
-            background: #ff9900;
+            background: $color1;
         }
     }
 }

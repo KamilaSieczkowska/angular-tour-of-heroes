@@ -1,21 +1,14 @@
-<h1 class="title">{{ title }}</h1>
-<div class="row">
-
-  <div class="heroes">
-    <ul class="heroes__list">
-      <li *ngFor="let hero of heroes" 
-        (click)="onSelect(hero)"
-        [class.selected]="hero === selectedHero">
-        <span> {{ hero.id }} </span>
+<div class="heroes">
+  <ul class="heroes__list">
+    <li *ngFor="let hero of heroes">
+      <a routerLink="/detail/{{hero.id}}">
         <div class="image">
           <img src="{{ hero.image }}" alt="{{ hero.name }}">
         </div>
         <p> {{ hero.name }} </p>
-      </li>
-    </ul>
-  </div>
-
-  <app-hero-detail [hero]="selectedHero"></app-hero-detail>
-
+      </a>
+    </li>
+  </ul>
 </div>
+
 <app-messages></app-messages>

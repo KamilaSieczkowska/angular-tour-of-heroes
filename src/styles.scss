@@ -1,5 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
+$color1: #7e120a;
+$color2: #E71D36;
+$color3: #FF9F1C;
+$color4: #F2AF29;
+$color5: #FDFFFC;
+$color6: #2EC4B6;
+$color7: #011627;
+
+
+@import url('https://fonts.googleapis.com/css?family=Dokdo|Karla:400,700&subset=latin-ext');
+
 * {
     box-sizing: border-box;
 }
@@ -7,13 +18,14 @@
 html, body {
     margin: 0;
     padding: 0;
-    color: #1a1a1a;
-    background: #fbfbfb;
+    color: $color7;
+    background: $color5;
+    font-family: 'Karla', sans-serif; 
 }
 
 .title {
     margin: 0;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     padding: 50px 0;
 }

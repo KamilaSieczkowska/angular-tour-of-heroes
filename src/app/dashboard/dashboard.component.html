@@ -1,7 +1,9 @@
-<h3 class="title">Top 3</h3>
 <div class="top__box">
-  <a *ngFor="let hero of heroes" class="single__box">
+  <a *ngFor="let hero of heroes" class="single__box" routerLink="/detail/{{hero.id}}">
     <div class="hero">
+      <figure>
+        <img src=" {{ hero.image }} " alt=" {{ hero.name }} ">
+      </figure>
       <h4> {{ hero.name }} </h4>
     </div>
   </a>
