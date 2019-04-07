@@ -1,11 +1,10 @@
 @import '../../styles.scss';
 
 .messages {
-    width: 60%;
     padding: 20px;
     background: $color7;
     color: $color5;
-    margin: 20px auto;
+    font-family: 'Karla', sans-serif;
 
     h2 {
         margin: 0;

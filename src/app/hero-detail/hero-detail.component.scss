@@ -1,13 +1,15 @@
+@import '../../styles.scss';
+
 .hero__box {
     background: #607d8b;
     padding: 30px 20px;
     color: #FFF;
     width: 100%;
+    position: relative;
 }
 
 .details__title {
-    font-size: 2rem;
-    padding: 10px 0;
+    font-size: 5rem;
     margin: 0;
 }
 
@@ -15,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     .image {
         width: 200px;
         height: 200px;
@@ -34,17 +36,38 @@
 
         p {
             margin: 0;
-            padding: 15px 0;
+            padding: 10px 0;
             font-size: 1.3rem;
+            font-family: 'Karla', sans-serif;
 
             span {
                 font-weight: bold;
             }
 
             input {
-                width: 100%;
+                margin-left: 10px;
+                width: 300px;
                 padding: 10px;
             }
         }
+    }
+}
+
+.back {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: $color7;
+    color: #FFF;
+    cursor: pointer;
+    transition: all .3s ease-in;
+
+    &:hover {
+        background: $color6;
+        color: $color7;
     }
 }
