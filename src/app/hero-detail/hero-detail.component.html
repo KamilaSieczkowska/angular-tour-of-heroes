@@ -7,13 +7,15 @@
       <h2 class="details__title">{{ hero.name }}</h2>
       <p><span>id: </span> {{ hero.id }} </p>
       <p>
-        <label><span>opis: </span>
+        <label>
           <input [(ngModel)]="hero.desc" placeholder="opis bohatera" />
         </label>
       </p>
+      <div class="button__box">
+        <button (click)="save()" class="save">zapisz zmiany</button>
+      </div>
     </div>
   </div>
   <button (click)="goBack()" class="back">wróć do listy</button>
 </div>
 
-<app-messages></app-messages>

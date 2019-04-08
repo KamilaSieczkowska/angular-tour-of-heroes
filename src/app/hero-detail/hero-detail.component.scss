@@ -45,13 +45,33 @@
             }
 
             input {
-                margin-left: 10px;
-                width: 300px;
+                width: 100%;
                 padding: 10px;
             }
         }
     }
 }
+
+.button__box {
+    width: 100%;
+    
+    .save {
+        display: block;
+        padding: 10px;
+        border: none;
+        outline: none;
+        background: $color3;
+        color: $color7;
+        cursor: pointer;
+        transition: all .3s ease-in;
+    
+        &:hover {
+            background: $color4;
+            color: $color7;
+        }
+    }
+}
+
 
 .back {
     display: block;
